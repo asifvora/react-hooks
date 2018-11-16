@@ -126,6 +126,11 @@ The following hooks are also provided for convenience:
 
 - `usePrevious` - Returns the previously rendered value you pass it
 
+## Hooks are JavaScript functions, but they have two additional rules:
+
+- _Note: Only call Hooks at the top level. Don’t try to call Hooks inside loops, conditions, or nested functions._
+- _Note: Only call Hooks from React function components. Don’t try to call Hooks from regular JavaScript functions._
+
 ## License
 
 MIT License
