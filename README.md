@@ -3,10 +3,10 @@ React hooks
 
 ## Usage
 
-To use hooks in a functional compoennt, wrap it in `useHooks` then use any hook you want!
+To use hooks in a functional component!
 
 ```js
-import React, { useState, useEffect, useReducer, Suspense } from 'react';
+import React, { useState, useEffect, useReducer } from 'react';
 const style = {
   height: 60,
   width: 50,
@@ -59,10 +59,10 @@ function Counter({ initialCount }) {
       <p style={{ fontSize: 100 }}><b>{state.count}</b></p>
       <button style={style} onClick={() => dispatch({ type: 'reset', payload: initialCount })}>
         Reset
-            </button>
+      </button>
       <button style={style} onClick={() => dispatch({ type: 'increment' })}>
         ➕
-            </button>
+      </button>
       <button style={style} onClick={() => dispatch({ type: 'decrement' })}>
         ➖
       </button>
