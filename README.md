@@ -11,6 +11,23 @@ $ npm install react@16.7.0-alpha.0 --save
 $ npm install react-dom@16.7.0-alpha.0 --save
 ```
 
+## Hooks
+Hooks in React.
+
+### Basic Hooks
+- `useState`
+- `useEffect`
+- `useContext`
+
+## Additional Hooks
+- `useReducer`
+- `useCallback`
+- `useMemo`
+- `useRef`
+- `useImperativeMethods`
+- `useMutationEffect` _Note: currently identical to `useEffect`_
+- `useLayoutEffect` _Note: currently identical to `useEffect`_
+
 ## State Hook
 This example renders a counter. When you click the button, it increments the value:
 
@@ -150,24 +167,8 @@ function MyComponent() {
 
 React Hooks API here: https://reactjs.org/docs/hooks-reference.html
 
-- `useState`
-- `useReducer`
-- `useContext`
-- `useMemo`
-- `useCallback`
-- `useEffect`
-- `useRef`
-- `useImperativeMethods`
-- `useMutationEffect` _Note: currently identical to `useEffect`_
-- `useLayoutEffect` _Note: currently identical to `useEffect`_
-
-## Additional Hooks
-
-The following hooks are also provided for convenience:
-
-- `usePrevious` - Returns the previously rendered value you pass it
-
 ## ✌️ Rules of Hooks
+
 Hooks are JavaScript functions, but they have two additional rules:
 
 - _Note: Only call Hooks at the top level. Don’t try to call Hooks inside loops, conditions, or nested functions._
