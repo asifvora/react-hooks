@@ -1,10 +1,13 @@
-# An introduction to React Hooks
+# React Hooks
 ![image](https://github.com/asifvora/react-hooks/blob/master/react-hooks.png)
 
 As the ReactJs library gets new updates, there are a lot of things being added and a few that are deprecated too. ReactJs is becoming more powerful day by day due to such updates. As a developer, you need to keep yourself up to date with new features coming out in every version.
 
 # Have you heard about React Hooks?
+
 Well, React Hooks, a feature which is available in React v16.7.0-alpha, is something awesome you should know about.
+
+# Use with react this version
 
 ```
 $ npm install react@16.7.0-alpha.0 --save
@@ -90,7 +93,7 @@ function Example() {
 ```
 
 
-## Usage
+## Some Example Usage
 
 To use hooks in a functional component!
 
@@ -136,7 +139,7 @@ function Counter({ initialCount }) {
   );
 }
 
-const MyComponentMemo = memo(function MyComponent(props) {
+const MyComponentMemo = memo((props) =>{
   return (
     <>
       <div style={{ fontSize: 50 }}>{props.name}</div>
@@ -162,11 +165,6 @@ function MyComponent() {
 }
 
 ```
-
-## Documentation
-
-React Hooks API here: https://reactjs.org/docs/hooks-reference.html
-
 ## ✌️ Rules of Hooks
 
 Hooks are JavaScript functions, but they have two additional rules:
@@ -174,6 +172,9 @@ Hooks are JavaScript functions, but they have two additional rules:
 - _Note: Only call Hooks at the top level. Don’t try to call Hooks inside loops, conditions, or nested functions._
 - _Note: Only call Hooks from React function components. Don’t try to call Hooks from regular JavaScript functions._
 
+## Documentation
+
+React Hooks API here: https://reactjs.org/docs/hooks-reference.html
 
 ## Questions?🤔 
   
