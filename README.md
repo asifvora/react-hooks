@@ -4,9 +4,46 @@ As the ReactJs library gets new updates, there are a lot of things being added a
 # Have you heard about React Hooks?
 Well, React Hooks, a feature which is available in React v16.7.0-alpha, is something awesome you should know about.
 
+![image](https://github.com/asifvora/react-hooks/blob/master/react-hooks.png)
+
+
 ```
 $ npm install react@16.7.0-alpha.0 --save
 $ npm install react-dom@16.7.0-alpha.0 --save
+```
+
+## State Hook
+This example renders a counter. When you click the button, it increments the value:
+
+```js
+import { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+```
+
+### Declaring multiple state variables
+You can use the State Hook more than once in a single component:
+```js
+function ExampleWithManyStates() {
+  // Declare multiple state variables!
+  const [age, setAge] = useState(42);
+  const [fruit, setFruit] = useState('banana');
+  const [todos, setTodos] = useState([{ text: 'Learn Hooks' }]);
+  // ...
+}
 ```
 
 ## Usage
@@ -130,6 +167,15 @@ The following hooks are also provided for convenience:
 
 - _Note: Only call Hooks at the top level. Don’t try to call Hooks inside loops, conditions, or nested functions._
 - _Note: Only call Hooks from React function components. Don’t try to call Hooks from regular JavaScript functions._
+
+
+## Questions?🤔 
+  
+Hit me on [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/007_dark_shadow)
+[![Medium](https://img.shields.io/badge/Medium-asifvora-brightgreen.svg)](https://medium.com/@asifvora)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-asifvora-blue.svg)](https://www.linkedin.com/in/asif-vora/) 
+[![Instagram](https://img.shields.io/badge/Instagram-Asif%20Vora-green.svg)](https://www.instagram.com/007_dark_shadow/) 
+
 
 ## License
 
