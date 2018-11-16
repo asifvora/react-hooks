@@ -5,7 +5,7 @@ React hooks
 
 To use hooks in a functional compoennt, wrap it in `useHooks` then use any hook you want!
 
-```jsx
+```js
 import React, { useState, useEffect, useReducer, Suspense } from 'react';
 const style = {
   height: 60,
