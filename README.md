@@ -1,11 +1,10 @@
 # An introduction to React Hooks
+![image](https://github.com/asifvora/react-hooks/blob/master/react-hooks.png)
+
 As the ReactJs library gets new updates, there are a lot of things being added and a few that are deprecated too. ReactJs is becoming more powerful day by day due to such updates. As a developer, you need to keep yourself up to date with new features coming out in every version.
 
 # Have you heard about React Hooks?
 Well, React Hooks, a feature which is available in React v16.7.0-alpha, is something awesome you should know about.
-
-![image](https://github.com/asifvora/react-hooks/blob/master/react-hooks.png)
-
 
 ```
 $ npm install react@16.7.0-alpha.0 --save
@@ -45,6 +44,34 @@ function ExampleWithManyStates() {
   // ...
 }
 ```
+
+## Effect Hook
+The Effect Hook, `useEffect`, adds the ability to perform side effects from a function component. It serves the same purpose as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` in React classes, but unified into a single API.
+
+For example, this component sets the document title after React updates the DOM:
+```js
+import { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
 
 ## Usage
 
@@ -163,7 +190,8 @@ The following hooks are also provided for convenience:
 
 - `usePrevious` - Returns the previously rendered value you pass it
 
-## Hooks are JavaScript functions, but they have two additional rules:
+## ✌️ Rules of Hooks
+Hooks are JavaScript functions, but they have two additional rules:
 
 - _Note: Only call Hooks at the top level. Don’t try to call Hooks inside loops, conditions, or nested functions._
 - _Note: Only call Hooks from React function components. Don’t try to call Hooks from regular JavaScript functions._
