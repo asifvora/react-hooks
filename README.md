@@ -183,6 +183,9 @@ Hit me on [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-asifvora-blue.svg)](https://www.linkedin.com/in/asif-vora/) 
 [![Instagram](https://img.shields.io/badge/Instagram-Asif%20Vora-green.svg)](https://www.instagram.com/007_dark_shadow/) 
 
+# How to contribute?
+
+Check out contribution guidelines 👉[CONTRIBUTING.md](https://github.com/asifvora/react-hooks/blob/master/CONTRIBUTING.md)
 
 ## License
 
