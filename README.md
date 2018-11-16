@@ -1,12 +1,20 @@
-# react-hooks
-React hooks
+# An introduction to React Hooks
+As the ReactJs library gets new updates, there are a lot of things being added and a few that are deprecated too. ReactJs is becoming more powerful day by day due to such updates. As a developer, you need to keep yourself up to date with new features coming out in every version.
+
+# Have you heard about React Hooks?
+Well, React Hooks, a feature which is available in React v16.7.0-alpha, is something awesome you should know about.
+
+```
+$ npm install react@16.7.0-alpha.0 --save
+$ npm install react-dom@16.7.0-alpha.0 --save
+```
 
 ## Usage
 
 To use hooks in a functional component!
 
 ```js
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useState, useEffect, useReducer, memo } from 'react';
 const style = {
   height: 60,
   width: 50,
@@ -70,7 +78,7 @@ function Counter({ initialCount }) {
   );
 }
 
-const MyComponentMemo = React.memo(function MyComponent(props) {
+const MyComponentMemo = memo(function MyComponent(props) {
   return (
     <>
       <div style={{ fontSize: 50 }}>{props.name}</div>
@@ -101,8 +109,8 @@ function MyComponent() {
 
 React Hooks API here: https://reactjs.org/docs/hooks-reference.html
 
-- `useReducer`
 - `useState`
+- `useReducer`
 - `useContext`
 - `useMemo`
 - `useCallback`
